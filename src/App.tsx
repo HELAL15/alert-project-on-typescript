@@ -1,14 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
+import Alert from './components/ui/Alert/Alert'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-
+    <div className="container">
+      <Alert title='test' alert='success' description='test desc' />
+      <Alert title='test' alert='warning' description='test desc' />
+      <Alert title='test' alert='info' description='test desc' />
+      <Alert title='test' alert='danger' description='test desc' />
+    </div>
     </>
   )
 }
